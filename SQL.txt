@@ -1,0 +1,42 @@
+SQL構文
+
+・SELECT
+カラム（どの行か）を選択
+
+・FROM
+どのテーブルかを選択
+
+・WHERE
+SELECTの中で更に絞り込みをする
+ex.)SELECT * FROM purchases WHERE price
+
+・LIKE
+ある文字を含む検索
+ex1.)SELECT * FROM purchases WHERE price LIKE 1000;
+ex2.)SELECT * FROM purchases WHERE name LIKE "プリン";
+LIKEで絞り込む文字列に"%"をつけることであいまい検索ができる
+文字列を含む検索
+LIKE "%プリン%"
+前方一致
+LIKE "プリン%"
+後方一致
+LIKE "%プリン%"
+
+・NOT
+〇〇を含まない検索
+ex1.)SELECT * FROM purchases WHERE NOT name LIKE "%プリン%";
+ex2.)SELECT * FROM purchases WHERE NOT name = "プリン";
+
+・IS NULL & IS NOT NULL
+NULLであるデータを取得
+ex1.)SELECT * FROM purchases WHERE price IS NULL;
+ex2.)SELECT * FROM purchases WHERE price IS NOT NULL;
+※WHERE price = NULL;など=は使用できない
+
+・AND
+WHEREに複数条件指定することができる(〇〇かつ〇〇)
+ex.)SELECT * FROM purchases WHERE price LIKE 1000 AND name = "プリン";
+
+・OR
+WHEREに複数条件指定することができる(〇〇または〇〇)
+ex.)SELECT * FROM purchases WHERE name = "ケーキ" AND name = "プリン";

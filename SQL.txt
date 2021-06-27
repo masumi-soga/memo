@@ -40,3 +40,6 @@ ex.)SELECT * FROM purchases WHERE price LIKE 1000 AND name = "プリン";
 ・OR
 WHEREに複数条件指定することができる(〇〇または〇〇)
 ex.)SELECT * FROM purchases WHERE name = "ケーキ" AND name = "プリン";
+
+・LIMIT
+データの取得件数を制限する

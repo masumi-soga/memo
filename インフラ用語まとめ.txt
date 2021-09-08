@@ -1,4 +1,4 @@
-・　ネットワーク基礎用語
+・ネットワーク基礎用語
 LAN(Local Area Network)：建物内・敷地内などの狭い範囲のネットワーク。自前で構築
 WAN(Wide Area Network)：地理的に離れたLANとLANを結びつけることで構築されるネットワーク。電気通信事業者が提供
 インターネット：プロバイダ(ISP:Internet Service Provider)を介す世界規模のWAN。TCP/IPで相互接続を行う
